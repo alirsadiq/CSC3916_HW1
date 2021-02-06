@@ -1,5 +1,5 @@
 var server = require("http").createServer();
-
+module.exports = server
 server.on("request", (request, response) => {
     var body = [];
     request.on("data", chunk => {
